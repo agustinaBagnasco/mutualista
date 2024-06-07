@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<script src="dom/JQuery.js">        </script>
+	<script src="dom/especialidades.js"></script>
+	<script src="dom/médicos.js">       </script>
+
+	<script>
+		function inicializar() {
+			especialidades_inicializar();
+			especialidades_listar();
+			médicos_inicializar();
+			médicos_listar();
+		}
+	</script>
+	<title>Especialidades | Medicos</title>
+</head>
+
+<body onload="inicializar()" class="container">
+	<header>
+		<h1>Mutualista</h1>
+		<nav>
+			<a href="inicio.html"> Inicio </a>
+			<a> Especialidades y M&eacute;dicos</a>
+			<a href="pacientesyconsultas.html">Pacientes y Consultas </a>
+			<a href="estadísticas.html"> Estad&iacute;sticas </a>
+		</nav>
+	</header>
+	<main>
+
+		<form>
+			<h2>Especialidades</h2>
+			<table>
+				<tr>
+					<td>Id: </td>
+					<td><input type="number" id="especialidad_id"> </td>
+				</tr>
+				<tr>
+					<td>Nombre:</td>
+					<td><input type="text" id="especialidad_nombre"></td>
+				</tr>
+			</table>
+			<div class="botones">
+				<input type="button" value="Limpiar" onclick="especialidades_limpiarCampos()">
+				<input type="button" value="Ingresar" onclick="especialidades_alta()">
+				<input type="button" value="Eliminar" onclick="especialidades_baja()">
+				<input type="button" value="Modificar" onclick="especialidades_modificar()">
+			</div>
+			<div class="lista">
+				<p>Lista de especialidades:</p>
+				<select id="especialidades_lista" class="lista" size="6"
+					onclick="especialidades_seleccionar()"></select>
+			</div>
+		</form>
+
+		<form>
+			<h2>M&eacute;dicos</h2>
+
+			<table>
+				<tr>
+					<td>Id: </td>
+					<td><input type="number" id="médico_id"> </td>
+				</tr>
+				<tr>
+					<td>Nombre: </td>
+					<td><input type="text" id="médico_nombre"> </td>
+				</tr>
+				<tr>
+					<td>Especialidad:</td>
+					<td><select id="médico_especialidad"></select></td>
+				</tr>
+			</table>
+			<div class="botones">
+				<input type="button" value="Limpiar" onclick="médicos_limpiarCampos()">
+				<input type="button" value="Ingresar" onclick="médicos_alta()">
+				<input type="button" value="Eliminar" onclick="médicos_baja()">
+				<input type="button" value="Modificar" onclick="médicos_modificar()">
+			</div>
+			<div class="lista">
+				<p>Lista de m&eacute;dicos:</p>
+				<select id="médicos_lista" class="lista" size="6" onclick="médicos_seleccionar()"></select>
+			</div>
+		</form>
+
+	</main>
+</body>
+
+</html>

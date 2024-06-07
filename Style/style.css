@@ -1,0 +1,74 @@
+body {
+	text-align: center;
+}
+
+h1 {
+	font-size: larger;
+}
+nav {
+	display: flex;
+	justify-content: center;
+}
+nav a {
+	background-color:rgb(146, 204, 146);
+	border-bottom: 4px solid rgb(146, 204, 146);
+	display: block;
+	padding: 8px 16px;
+}
+nav a[href] {
+	background-color: transparent;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	margin: 16px;
+}
+
+form {
+	margin: 8px 32px;
+	width: 400px;
+}
+h2 {
+	border-bottom: 2px solid maroon;
+	font-size: inherit;
+	margin: 0;
+	padding: 8px;
+}
+table {
+	border-spacing: 4px;
+	padding: 4px;
+	width: 100%;
+}
+.botones {
+	display: flex;
+	gap: 5px;
+	border-bottom: 2px solid maroon;
+	padding: 0 8px 8px;
+	
+}
+.botones input {
+	padding: 4px 8px;
+	width: 40%;
+	margin-top: 5px;
+}
+.lista {
+	padding: 8px;
+}
+.lista p {
+	margin: 0 0 8px;
+}
+select {
+	width: 100%;
+}
+#especialidad_id, 
+#especialidad_nombre,
+#médico_id,
+#médico_nombre,
+#paciente_id,
+#paciente_nombre,
+#consulta_id,
+#consulta_fecha,
+#consulta_turno{
+	width: 100%;
+}
