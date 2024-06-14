@@ -1,22 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 body {
+	background-image: url(../img/portada.jpg);
 	text-align: center;
 }
 
 h1 {
 	font-size: larger;
+	font-family: "Permanent Marker", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
+
 nav {
 	display: flex;
 	justify-content: center;
 }
+
 nav a {
-	background-color:rgb(146, 204, 146);
-	border-bottom: 4px solid rgb(146, 204, 146);
+	background-color: rgba(155, 130, 131, 0.82);
 	display: block;
-	padding: 8px 16px;
+	padding: 15px 25px;
+	text-decoration: none;
+	border-radius: 10px;
+	margin: 5px;
+	font-style: italic;
 }
+
 nav a[href] {
-	background-color: transparent;
+	background-color: rgba(220, 211, 211, 0.961);
+	color: rgb(73, 5, 5);
+}
+.nav-inicio{
+	text-align: center;
+	width: 20%;
+	border: none;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 20px;
+	text-decoration: none;
+}
+.nav-inicio-cont{
+	display: flex; 
+	flex-flow: row wrap;
+	
 }
 
 main {
@@ -27,41 +54,55 @@ main {
 
 form {
 	margin: 8px 32px;
+	padding: 20px;
+	border-radius: 10px;
 	width: 400px;
+	background-color: rgba(220, 211, 211, 0.961);
 }
+
 h2 {
-	border-bottom: 2px solid maroon;
+	
 	font-size: inherit;
 	margin: 0;
 	padding: 8px;
 }
+
 table {
 	border-spacing: 4px;
 	padding: 4px;
 	width: 100%;
 }
+
 .botones {
 	display: flex;
 	gap: 5px;
 	border-bottom: 2px solid maroon;
 	padding: 0 8px 8px;
+	border-radius: 10px;
+
+}
+
+.botones input {
+	padding: 6px 10px;
+	width: 40%;
+	margin: 10px 0 10px 0;
+	border: none;
 	
 }
-.botones input {
-	padding: 4px 8px;
-	width: 40%;
-	margin-top: 5px;
-}
+
 .lista {
 	padding: 8px;
 }
+
 .lista p {
 	margin: 0 0 8px;
 }
+
 select {
 	width: 100%;
 }
-#especialidad_id, 
+
+#especialidad_id,
 #especialidad_nombre,
 #médico_id,
 #médico_nombre,
@@ -69,6 +110,6 @@ select {
 #paciente_nombre,
 #consulta_id,
 #consulta_fecha,
-#consulta_turno{
+#consulta_turno {
 	width: 100%;
 }
